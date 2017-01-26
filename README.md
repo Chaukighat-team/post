@@ -1,21 +1,10 @@
-DOCTYPE html>
 <html>
   <body>
 
-	<h3>A demonstration of how to access a File Upload Button</h3>
-
-	<input type="file" id="myFile">
-
-	<p>Click the "Try it" button to disable the file upload button.</p>
-
-	<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myFile");
-    x.firstChild= true;
-}
-</script>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+	  Select image to upload:
+	  <input type="file" name="fileToUpload" id="fileToUpload">
+	  <input type="submit" value="Upload Image" name="submit">
+	</form>
 
   </body>
-</html>
